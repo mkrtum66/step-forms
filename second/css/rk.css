@@ -1,0 +1,134 @@
+:root {
+    --lt-base-font-size: 16px;
+    --lt-btn-color: #1ca141;
+    --lt-btn-color-hover: #33aa54;
+    --lt-link-color: #1c6ea5;
+    --lt-label-color-active: #1c6ea5;
+    --lt-label-font-size: 16px;
+    --lt-input-border: 1px solid #d8d8d8;
+    --lt-btn-border-radius: 3px;
+    --lt-input-outline: #1c6ea5 auto 1px;
+    --lt-input-font-weight: 400;
+    --lt-input-font-color: #333;
+    --lt-input-font-size: 1.1em
+}
+
+.brand {
+    background: #fff;
+    color: #00aeef
+}
+
+.brand .progress-unfilled {
+    background: #e8e6e4
+}
+
+.brand .progress-filled {
+    background: #00bc4e
+}
+
+.brand .steps--wrapper {
+    --step-mobile: #c3c3c3;
+    --step-desktop: #c3c3c3;
+    --bg-mobile: #eaeaea;
+    --bg-desktop: #eaeaea;
+    --line-mobile: #d3d3c3
+}
+
+.brand .step-active {
+    --step-mobile: #00aeef;
+    --step-desktop: #00aeef
+}
+
+@media (min-width: 799px) {
+    .brand {
+        background: #fff
+    }
+}
+
+.brand .innerWrapper {
+    border: 1px solid #e8e6e4
+}
+
+@media (min-width: 799px) {
+    .brand .innerWrapper {
+        border: none
+    }
+}
+
+.brand input[type=text] {
+    color: #00aeef
+}
+
+.brand input:focus {
+    color: #00bc4e;
+    border: 1px solid #00bc4e
+}
+
+.brand input[type=button] {
+    border: 2px solid #00aeef;
+    color: #00aeef
+}
+
+.brand input[type=button]:active {
+    color: #fff;
+    background: #00aeef;
+    border: 2px solid #00aeef
+}
+
+.brand input[type=submit] {
+    background: #00bc4e;
+    border-bottom: none;
+    text-shadow: none
+}
+
+.brand .input--text {
+    color: #00aeef
+}
+
+.brand .input--text.input--selected {
+    color: #00bc4e;
+    border: 1px solid #00bc4e
+}
+
+.brand label.activeLabel, .brand p.activeLabel {
+    color: #00bc4e
+}
+
+.brand select, .brand ul li {
+    color: #00aeef
+}
+
+.brand ul li.selected {
+    background: #00bc4e;
+    border: 1px solid #00bc4e
+}
+
+.brand #address2, .brand .helpText a, .brand p.providers_back, .brand span.providers_link {
+    color: #00aeef
+}
+
+.brand #topLogo #logo {
+    background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA2NDAuNSAxNjcuNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlPi5zdDB7ZmlsbDojMmNhMmRifS5zdDF7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggaWQ9ImJsYWNrZmllbGQiIGQ9Ik0zMjAgMjBoMjkzLjV2MTA3LjhMMzIwIDE0Ny43eiIvPjxwYXRoIGlkPSJibHVlZmllbGQiIGNsYXNzPSJzdDAiIGQ9Ik0yMCAyMGgzMDB2MTE4bC0zMDAgOS43eiIvPjxnIGlkPSJyYXRlIj48cGF0aCBjbGFzcz0ic3QxIiBkPSJNNjYuNyA5NS44aC02LjJ2MTcuMUgzNy42di02OGgzMi43YzE4LjkgMCAzMC45IDkuOSAzMC45IDI1LjYgMCA5LjgtNC43IDE3LjItMTIuOCAyMS4zbDE0LjMgMjFINzguMmwtMTEuNS0xN3ptMi4xLTMzLjJoLTguM3YxNS45aDguM2M2LjMgMCA5LjMtMyA5LjMtOCAuMS00LjktMy03LjktOS4zLTcuOXoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTU2LjEgMTAxaC0yNS44bC00LjYgMTEuOGgtMjMuM2wyOS43LTY3LjloMjIuNWwyOS43IDY3LjloLTIzLjdsLTQuNS0xMS44em0tNi4zLTE2LjVsLTYuNi0xNy4xLTYuNiAxNy4xaDEzLjJ6TTE5OS40IDYyLjdoLTE5LjlWNDQuOWg2Mi43djE3LjhoLTE5Ljl2NTAuMWgtMjIuOVY2Mi43ek0zMDQuNiA5NS42djE3LjNoLTU2LjV2LTY4aDU1LjJ2MTcuM2gtMzIuN3Y4aDI4Ljd2MTYuNWgtMjguN3Y4LjloMzR6Ii8+PC9nPjxnIGlkPSJraWNrIj48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzYzLjcgOTAuM2wtNS4xIDUuN3YxNi44SDMzNlY0NC45aDIyLjV2MjQuNmwyMi4zLTI0LjZoMjQuOWwtMjcuMiAyOS45IDI4LjUgMzhoLTI2LjVsLTE2LjgtMjIuNXpNNDEwLjIgNDQuOWgyMi45djY3LjloLTIyLjlWNDQuOXpNNDQxLjUgNzguOWMwLTIwLjkgMTYtMzUuNSAzNy44LTM1LjUgMTMuMyAwIDIzLjggNC45IDMwLjUgMTMuNmwtMTQuNSAxMi45Yy00LTUtOC43LTgtMTQuOC04LTkuNSAwLTE1LjkgNi42LTE1LjkgMTdzNi40IDE3IDE1LjkgMTdjNi4xIDAgMTAuOS0yLjkgMTQuOC04bDE0LjUgMTIuOWMtNi43IDguNy0xNy4yIDEzLjYtMzAuNSAxMy42LTIxLjggMC0zNy44LTE0LjYtMzcuOC0zNS41ek01NDQgOTAuM2wtNS4xIDUuN3YxNi44aC0yMi41VjQ0LjloMjIuNXYyNC42bDIyLjMtMjQuNmgyNC45bC0yNy4yIDI5LjkgMjguNSAzOEg1NjFsLTE3LTIyLjV6Ii8+PC9nPjxwYXRoIGlkPSJ0cmlhbmdsZSIgY2xhc3M9InN0MCIgZD0iTTU5Ni4yIDUwLjN2NTQuMkw1NzQgNzQuOGwyMi4yLTI0LjUiLz48L3N2Zz4=) no-repeat;
+    background-size: 240px 58px;
+    background-position: 50%;
+    padding: 75px 10px 0
+}
+
+@media (min-width: 799px) {
+    .brand #topLogo #logo {
+        background-size: 260px 60px;
+        width: 260px;
+        height: 60px;
+        padding: 0
+    }
+}
+
+@media (max-width: 799px) {
+    .brand #bottom #bottomLeft .text--footer {
+        color: rgba(51, 51, 51, .8)
+    }
+
+    .brand #bottom #bottomRight .link--footer {
+        color: rgba(51, 51, 51, .6)
+    }
+}
